@@ -537,10 +537,24 @@ pdfjs-dist@2.6.347:
   resolved "https://registry.nlark.com/pdfjs-dist/download/pdfjs-dist-2.6.347.tgz?cache=0&sync_timestamp=1623099424219&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fpdfjs-dist%2Fdownload%2Fpdfjs-dist-2.6.347.tgz#f257ed66e83be900cd0fd28524a2187fb9e25cd5"
   integrity sha1-8lftZug76QDND9KFJKIYf7niXNU=
 
+pdfjs-dist@^2.4.456:
+  version "2.9.359"
+  resolved "https://registry.nlark.com/pdfjs-dist/download/pdfjs-dist-2.9.359.tgz?cache=0&sync_timestamp=1627330748082&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fpdfjs-dist%2Fdownload%2Fpdfjs-dist-2.9.359.tgz#e67bafebf20e50fc41f1a5c189155ad008ac4f81"
+  integrity sha1-5nuv6/IOUPxB8aXBiRVa0AisT4E=
+
 pdfjs-dist@^2.6.347:
   version "2.8.335"
   resolved "https://registry.nlark.com/pdfjs-dist/download/pdfjs-dist-2.8.335.tgz?cache=0&sync_timestamp=1623099424219&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fpdfjs-dist%2Fdownload%2Fpdfjs-dist-2.8.335.tgz#06f602174b746def57edc8681a0f93c4029c89a1"
   integrity sha1-BvYCF0t0be9X7choGg+TxAKciaE=
+
+pdfvuer@^1.8.3:
+  version "1.8.3"
+  resolved "https://registry.nlark.com/pdfvuer/download/pdfvuer-1.8.3.tgz#9cc5e62a57d2bb508c1c95bb4572cdfca2a9e62e"
+  integrity sha1-nMXmKlfSu1CMHJW7RXLN/KKp5i4=
+  dependencies:
+    pdfjs-dist "^2.4.456"
+    raw-loader "^0.5.1"
+    vue-resize-sensor "^2.0.0"
 
 picomatch@^2.0.4, picomatch@^2.2.1:
   version "2.3.0"
@@ -632,6 +646,11 @@ punycode@^2.1.0:
   version "2.1.1"
   resolved "https://registry.npm.taobao.org/punycode/download/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha1-tYsBCsQMIsVldhbI0sLALHv0eew=
+
+raw-loader@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.npm.taobao.org/raw-loader/download/raw-loader-0.5.1.tgz?cache=0&sync_timestamp=1602255313867&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fraw-loader%2Fdownload%2Fraw-loader-0.5.1.tgz#0c3d0beaed8a01c966d9787bf778281252a979aa"
+  integrity sha1-DD0L6u2KAclm2Xh793goElKpeao=
 
 raw-loader@^4.0.2:
   version "4.0.2"

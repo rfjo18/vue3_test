@@ -6,8 +6,13 @@ import 'amfe-flexible'  //适配
 import ElementPlus from 'element-plus';
 import 'element-plus/lib/theme-chalk/index.css';
 
-createApp(App)
-    .use(router)
-    .use(store)
-    .use(ElementPlus)
-    .mount('#app')
+import plugins from './plugins'
+
+const  app=createApp(App);
+plugins(app);
+    app.use(router)
+        .use(store)
+        .use(ElementPlus)
+        .mount('#app')
+
+
