@@ -36,10 +36,13 @@ jobs:
         run: |
           yarn install
           yarn run build
-          cp docs/index.html
+        env:
+          CI: false
+
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: master # The branch the action should deploy to.
+          BRANCH: gh-pages # The branch the action should deploy to.  cp docs/index.html
           FOLDER: docs # The folder the action should deploy.
