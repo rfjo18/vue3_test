@@ -23,18 +23,13 @@ export default (app)=>{
         mounted(el,binding,vnode,prevNnode) {
             // 聚焦元素
             //el.focus()
-            console.log(el)
             let div=null;
             el.addEventListener('mousedown',function(e){
-                console.log(e.offsetX)
-                console.log(e.offsetY)
-                console.log(e)
-
+                console.log(e.offsetX,e.offsetY)
                 e.target.style.position="relative";
                 div=document.createElement('div');
                 div.style=`width:10px;height:10px;position:absolute;left:${e.offsetX-5}px;top:${e.offsetY-5}px;
                 background:#E3E3E3;border-radius:10px;z-index:0`;
-
 
                 this.appendChild(div)
             },false)
@@ -44,6 +39,15 @@ export default (app)=>{
                 this.removeChild(div)
                 div=null;
             },false)
+
+           /* var styleSheets = document.styleSheets[0];  //获取样式表引用
+            var index = styleSheets.length;  //获取样式表中包含样式的个数
+            if(styleSheets.insertRule){  //判断浏览器是否支持insertRule()方法
+                //使用insertRule()方法在文档内部样式表中增加一个p标签选择符的样式，设置段落背景色为红色，字体颜色为白色，补白为一个字体大小。插入位置在样式表的末尾，
+                styleSheets.insertRule("p{background-color:red;color:#fff;padding:1em;}", index);
+            }else{  //如果哦浏览器不支持insertRule()方法
+                styleSheets.addRule("P", "background-color:red;color:#fff;padding:1em;", index);
+            }*/
         },
         // 在包含组件的 VNode 更新之前调用
         beforeUpdate(el,binding,vnode,prevNnode) {},

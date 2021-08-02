@@ -5,13 +5,13 @@
     <a href="http://192.168.0.128:10110/hfpp-service/file/visit/hfpp/addressablefile/5dbd2575891947a5ad427b7823a8dfa1.pdf#toolbar=0"
      target="_blank">pdfaaas</a>
     <embed ref="embed"
-        src='http://192.168.0.128:10110/hfpp-service/file/visit/hfpp/addressablefile/5dbd2575891947a5ad427b7823a8dfa1.pdf#toolbar=0'
+        src='http://192.168.0.128:10110/hfpp-service/file/visit/hfpp/addressablefile/5dbd2575891947a5ad427b7823a8dfa1.pdf'
         type="application/pdf"
         width="100%"
         height="700px"
            name="asd"
-           palette="red|black"
-    />
+           palette="red|black"/>
+
 
 
 </template>
@@ -32,7 +32,7 @@ export default {
     mounted(){
 
         this.$refs.embed.title='sadddd';
-      console.log(this.$refs)
+        console.log(this.$refs)
 
     },
     methods: {}
