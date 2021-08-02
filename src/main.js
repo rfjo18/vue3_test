@@ -8,11 +8,10 @@ import 'element-plus/lib/theme-chalk/index.css';
 
 import plugins from './plugins'
 
-const  app=createApp(App);
-plugins(app);
-    app.use(router)
-        .use(store)
-        .use(ElementPlus)
-        .mount('#app')
-
+createApp(App)
+    .use(router)
+    .use(store)
+    .use(ElementPlus)
+    .use(plugins)
+    .mount('#app')
 
