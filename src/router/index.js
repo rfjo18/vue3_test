@@ -1,31 +1,40 @@
 // Vue Router 4  https://next.router.vuejs.org/zh/index.html
 import { createRouter, createWebHistory } from "vue-router";
-import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import Login from '../views/Login.vue'
-import Pdf from '../views/Pdf.vue'
-
 
 const router=createRouter({
     history: createWebHistory(),
     routes: [
         {
             path: '/',
-            component: Home,
+            name:'index',
+            component: () => import('../views/Home.vue'),
             children:[
                 {
                     path: '/about',
-                    component: About,
+                    name:'about',
+                    component:() => import('../views/About.vue'),
                 }
             ]
         },
         {
             path: '/login',
-            component: Login,
+            name:'login',
+            component:() => import('../views/Login.vue'),
         },
         {
             path: '/pdf',
-            component: Pdf,
+            name:'pdf',
+            component:() => import('../views/Pdf.vue'),
+        },
+        {
+            path: '/test',
+            name:'test',
+            component:() => import('../views/Test/index.vue'),
+        },
+        {
+            path: '/:pathMatch(.*)*',
+            name:'error',
+            component:() => import('../components/404.vue'),
         },
 
     ]

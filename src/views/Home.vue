@@ -5,6 +5,7 @@
         <el-menu-item index="/">首页</el-menu-item>
         <el-menu-item index="/about">关于</el-menu-item>
         <el-menu-item index="/pdf">pdf</el-menu-item>
+        <el-menu-item index="/test">test</el-menu-item>
     </el-menu>
 
     <router-view></router-view>

@@ -8,7 +8,7 @@
 // Check out https://github.com/vuejs/rfcs/blob/master/active-rfcs/0040-script-setup.md
 </script>
 
-<style>
+<style lang="scss">
 html,body{
     margin:0;
     padding:0;
@@ -18,9 +18,22 @@ html,body{
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
     height:100%;
 
 }
+
+// 过渡动画 横向渐变
+   .fade-transverse-leave-active,
+   .fade-transverse-enter-active {
+       transition: all .5s;
+   }
+    .fade-transverse-enter {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    .fade-transverse-leave-to {
+        opacity: 0;
+        transform: translateX(30px);
+    }
 </style>
