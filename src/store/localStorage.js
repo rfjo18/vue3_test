@@ -1,8 +1,8 @@
 const key='vite';
 
 export default store => {
-    if (localStorage[key]) store.replaceState(JSON.parse(localStorage[key]))
+    if (localStorage.getItem(key)) store.replaceState(JSON.parse(localStorage.getItem(key)))
     store.subscribe((mutation, state) => {
-        localStorage[key] = JSON.stringify(state)
+        localStorage.setItem(key,JSON.stringify(state))
     })
 }

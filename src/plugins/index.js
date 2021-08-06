@@ -66,6 +66,8 @@ export default {
         app.directive('dialogDrag', {
             mounted (el, binding, vnode, oldVnode) {
                 console.log(el)
+
+
                 const dialogHeaderEl = el.querySelector('.el-dialog__header')
                 const dragDom = el.querySelector('.el-dialog')
                 dialogHeaderEl.style.cursor = 'move'

@@ -38,8 +38,8 @@
         </el-collapse>
     </div>
 
-    <div v-dialogDrag  class="asdas">
-        <el-dialog :append-to-body="false"
+    <div  class="asdas">
+        <el-dialog :append-to-body="false" v-dialogDrag
                    title="提示"
                    v-model="dialogVisible"
                    width="30%">
