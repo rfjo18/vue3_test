@@ -1,1 +1,0 @@
-import{p as s,g as a,o as e,c as o}from"./vendor.de886f56.js";s("data-v-131ecf76");const d={class:"err_body"};a();const t={setup:s=>(s,a)=>(e(),o("div",d," 404 ")),__scopeId:"data-v-131ecf76"};export default t;
