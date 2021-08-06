@@ -24,6 +24,7 @@ export default defineConfig({
     build: {
         //brotliSize: false, // 默认为 true
         outDir:'./docs',
+        assetsDir:'',
     },
     /*server: {
         // 服务器主机名，如果允许外部访问，可设置为"0.0.0.0"
