@@ -1,5 +1,8 @@
 <template>
     <div class="test_body">
+        <h1>{{$store.state.count}}</h1>
+
+        <el-button @click="increment">点击</el-button>
         <MyUl>
             <MyLi></MyLi>
             <MyLi></MyLi>
@@ -35,8 +38,8 @@
         </el-collapse>
     </div>
 
-    <div   class="asdas">
-        <el-dialog append-to-body v-dialogDrag
+    <div v-dialogDrag  class="asdas">
+        <el-dialog :append-to-body="false"
                    title="提示"
                    v-model="dialogVisible"
                    width="30%">
@@ -69,7 +72,11 @@ import MyLi from "./MyLi.vue";
         created() {
 
         },
-        methods: {}
+        methods: {
+            increment(){
+                this.$store.commit('increment',this.$store.state.count+1)
+            }
+        }
     }
 </script>
 
