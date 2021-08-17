@@ -20,7 +20,7 @@ export default defineConfig({
             additionalData: `$injectedColor: orange;`
         }*/
     },
-    base:'./',
+    base:'./vue3_test/',
     build: {
         //brotliSize: false, // 默认为 true
         outDir:'./docs',
